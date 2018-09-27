@@ -1,2 +1,2 @@
 # Emerging-Technonlgies
-Some basic opython commands
+Some basic python commands
