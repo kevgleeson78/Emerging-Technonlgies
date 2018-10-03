@@ -15,7 +15,21 @@ y = 3.0 * x + 1.0
 noise = np.random.normal(0.0, 1.0, len(x))
 
 # plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'b.')
-plt.plot(x, y + noise, 'r.')
-plt.plot(x, y, 'b.')
-plt.ylabel("Some Value Label")
+plt.plot(x, y + noise, 'r.', label="Actual")
+plt.plot(x, y, 'b', label="Model")
+# plt.ylabel("Some Value Label")
+
+# to add a title
+plt.title("SImple Title")
+
+# To add a label to the x axis
+plt.xlabel("Weight")
+
+# To add a label to the y axis
+plt.ylabel("Mass")
+
+# To add a legend to the plot label has to be added to the plots above as an extra parameter.
+
+plt.legend()
+
 plt.show()
